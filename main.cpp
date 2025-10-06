@@ -1,15 +1,39 @@
 #include "AudioHandler.h"
 #include "MP3Player.h"
+#include "VirtualAudioManager.h"
 #include <iostream>
+#include <csignal>
+
+VirtualAudioManager* globalVAM = nullptr;
+
+void signalHandler(int signum){
+	std::cout << "\n[Signal] Interrupt (" << signum << ") detected. Cleaning up...\n";
+	if(globalVAM){
+		globalVAM->cleanup();
+	}
+	std::_Exit(signum);
+}
 
 int main(int argc, char** argv) {
 	//ensure proper arguments are passed
-	if(argc < 2){
+	if(argc != 2){
 		std::cout << "Usage: " << argv[0] << " <mp3File>\n";
 		return 1;
 	}
 
 	try {
+		//ensure virtual sink can be closed if program is interrupted
+		std::signal(SIGINT, signalHandler);
+
+		//set up virtual sink
+		VirtualAudioManager vam("NoiseSink");
+		globalVAM = &vam;
+		if(!vam.setup()){
+			std::cerr << "Failed to initialize virtual audio environment!\n";
+			return 1;
+		}
+		
+
 		//set up MP3 file
 		std::string mp3File = "voices/";
 		mp3File.append(argv[1]);
@@ -19,23 +43,27 @@ int main(int argc, char** argv) {
 			return 1;
 		}
 
-		//get device IDs
+		//get input device ID
+		int virtualSinkId = -1;
 		AudioHandler audio;
 
 		auto device_list = audio.listDevices();
                 std::cout << "Available devices:\n";
                 for (const auto& d : device_list) {
                     std::cout << d.id << ": " << d.name
-        	              << " (inputs: " << d.maxInputChannels
-                	      << ", outputs: " << d.maxOutputChannels << ")\n";
+        	              << " (inputs: " << d.maxInputChannels << std::endl;
+		    if(d.name.find(vam.getSinkName()) != std::string::npos)
+			    virtualSinkId = d.id;
 	        }
 
-        	int inputId, outputId;
+        	int inputId;
 	        std::cout << "Enter input device ID: ";
 	        std::cin >> inputId;
-	        std::cout << "Enter output device ID: ";
-	        std::cin >> outputId;
-	
+		
+		//get output device ID
+		int outputId = virtualSinkId != -1 ? virtualSinkId : 14;
+		std::cout << "Using Output Device ID: " << outputId << "\n";
+
 		//open Audio Stream
 	        if (audio.openStream(inputId, outputId, &player)) {
 	            audio.start();
@@ -49,5 +77,6 @@ int main(int argc, char** argv) {
         } catch (std::exception& e) {
 	        std::cerr << "Fatal error: " << e.what() << "\n";
         }
-}
 
+	return 0;
+}

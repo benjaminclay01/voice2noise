@@ -3,8 +3,8 @@
 
 #define FRAMES_PER_BUFFER 1024
 #define THRESHOLD 0.05f
-#define MINGAIN 0.4f
-#define MAXGAIN 1.5f
+#define MINGAIN 0.0f
+#define MAXGAIN 2.0f
 
 AudioHandler::AudioHandler() : stream(nullptr){	
 	PaError err = Pa_Initialize();
