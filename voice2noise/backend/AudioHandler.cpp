@@ -3,7 +3,7 @@
 
 #define FRAMES_PER_BUFFER 1024
 #define THRESHOLD 0.05f
-#define MINGAIN 0.0f
+#define MINGAIN 0.5f
 #define MAXGAIN 2.0f
 
 AudioHandler::AudioHandler() : stream(nullptr){	
@@ -18,7 +18,6 @@ AudioHandler::~AudioHandler(){
 		Pa_StopStream(stream);
 		Pa_CloseStream(stream);
 	}
-	Pa_Terminate;
 }
 
 std::vector<AudioDevice> AudioHandler::listDevices() const{
@@ -46,11 +45,11 @@ bool AudioHandler::openStream(int inputDeviceId, int outputDeviceId, MP3Player* 
 		std::cerr << "Invalid or unloaded MP3Player\n";
 		return false;
 	}
-	mp3Player = player;
+    mp3Player = player;
 
 	//Set up Input/Output streams
 	PaStreamParameters inputParams, outputParams;
-        const PaDeviceInfo* inputInfo = Pa_GetDeviceInfo(inputDeviceId);
+    const PaDeviceInfo* inputInfo = Pa_GetDeviceInfo(inputDeviceId);
 	const PaDeviceInfo* outputInfo = Pa_GetDeviceInfo(outputDeviceId);
 
 	if(!inputInfo || !outputInfo) 
@@ -66,18 +65,18 @@ bool AudioHandler::openStream(int inputDeviceId, int outputDeviceId, MP3Player* 
 	int sampleRate = player->getSampleRate();
 
 	inputParams.device = inputDeviceId;
-        inputParams.channelCount = inChannels;
-        inputParams.sampleFormat = paFloat32;
-        inputParams.suggestedLatency = inputInfo->defaultLowInputLatency;
-        inputParams.hostApiSpecificStreamInfo = nullptr;
+    inputParams.channelCount = inChannels;
+    inputParams.sampleFormat = paFloat32;
+    inputParams.suggestedLatency = inputInfo->defaultLowInputLatency;
+    inputParams.hostApiSpecificStreamInfo = nullptr;
 
-        outputParams.device = outputDeviceId;
-        outputParams.channelCount = outChannels;
-        outputParams.sampleFormat = paFloat32;
-	outputParams.suggestedLatency = outputInfo->defaultLowOutputLatency;
-        outputParams.hostApiSpecificStreamInfo = nullptr;
+    outputParams.device = outputDeviceId;
+    outputParams.channelCount = outChannels;
+    outputParams.sampleFormat = paFloat32;
+    outputParams.suggestedLatency = outputInfo->defaultLowOutputLatency;
+    outputParams.hostApiSpecificStreamInfo = nullptr;
 
-        PaError err = Pa_OpenStream(&stream, &inputParams, &outputParams, sampleRate, FRAMES_PER_BUFFER, paClipOff, AudioHandler::audioCallback, this);
+    PaError err = Pa_OpenStream(&this->stream, &inputParams, &outputParams, sampleRate, FRAMES_PER_BUFFER, paClipOff, AudioHandler::audioCallback, this);
 
 	if(err != paNoError){
 		std::cerr << "Error Opening Stream: " << Pa_GetErrorText(err) << "\n";
@@ -90,7 +89,7 @@ bool AudioHandler::openStream(int inputDeviceId, int outputDeviceId, MP3Player* 
 }
 
 void AudioHandler::start(){
-	if(stream){
+    if(stream){
 		Pa_StartStream(stream);
 	}
 }
@@ -119,37 +118,31 @@ int AudioHandler::audioCallback(const void* inputBuffer, void* outputBuffer, uns
 	//output nothing if silent
 	std::fill(out, out + framesPerBuffer * self->outChannels, 0.0f);
 
-	//fill output when input exist
-	if (inputBuffer && self->mp3Player){
+    //only write if volume is above threshold
+    if(peak < THRESHOLD){
+        std::fill(out, out + framesPerBuffer * self->outChannels, 0.0f);
+        return paContinue;
+    }
 
+    size_t totalFramesWritten = 0;
 
-		//only write if volume is above threshold
-		if(peak < THRESHOLD){
-			std::fill(out, out + framesPerBuffer * self->outChannels, 0.0f);
-			return paContinue;
-		}
+	while(totalFramesWritten < framesPerBuffer){
+        size_t framesRead = self->mp3Player->readFrames(out + totalFramesWritten * self->outChannels, framesPerBuffer - totalFramesWritten);
 
-		size_t totalFramesWritten = 0;
+        //EOF (Mp3)
+        if(framesRead == 0){
+            //Loop file
+            self->mp3Player->rewind();
+            //std::cerr << "[Callback] MP3 reached EOR - rewinding.\n";
+            continue;
+        }
 
-
-		while(totalFramesWritten < framesPerBuffer){
-			size_t framesRead = self->mp3Player->readFrames(out + totalFramesWritten * self->outChannels, framesPerBuffer - totalFramesWritten);
-
-			//EOF (Mp3)
-			if(framesRead == 0){
-				//Loop file
-				self->mp3Player->rewind();
-				//std::cerr << "[Callback] MP3 reached EOR - rewinding.\n";
-				continue;
-			}
-
-			totalFramesWritten += framesRead;
-		}
-		//Apply volume
-		self->smoothedGain = 0.8 * self->smoothedGain + 0.2f * gain;
-		for(unsigned long i = 0; i < framesPerBuffer * self->outChannels; ++i){
-			out[i] *= self->smoothedGain;
-		}
-	}
+        totalFramesWritten += framesRead;
+    }
+    //Apply volume
+    self->smoothedGain = 0.8 * self->smoothedGain + 0.2f * gain;
+    for(unsigned long i = 0; i < framesPerBuffer * self->outChannels; ++i){
+        out[i] *= self->smoothedGain;
+    }
         return paContinue;
 }

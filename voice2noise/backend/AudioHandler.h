@@ -16,7 +16,7 @@ public:
 	AudioHandler();
 	~AudioHandler();
 
-	bool openStream(int inputDeviceId, int outputDeviceId, MP3Player* player);
+    bool openStream(int inputDeviceId, int outputDeviceId, MP3Player* player);
 	void start();
 	void stop();
 	std::vector<AudioDevice> listDevices() const;
@@ -26,8 +26,8 @@ private:
 	int outChannels;
 	float smoothedGain = 1.0f;
 	PaStream* stream;
-	MP3Player* mp3Player;
-	static int audioCallback(const void* inputBuffer, void* outputBuffer,
+    MP3Player* mp3Player = nullptr;
+    static int audioCallback(const void* inputBuffer, void* outputBuffer,
                                  unsigned long framesPerBuffer,
                                  const PaStreamCallbackTimeInfo* timeInfo,
                                  PaStreamCallbackFlags statusFlags,

@@ -23,8 +23,9 @@ bool MP3Player::isLoaded() const {
 }
 
 size_t MP3Player::readFrames(float* buffer, size_t framesToRead){
-	if(!loaded) 
+    if(!this->loaded){
 		return 0;
+    }
 	return drmp3_read_pcm_frames_f32(&mp3, framesToRead, buffer);
 }
 

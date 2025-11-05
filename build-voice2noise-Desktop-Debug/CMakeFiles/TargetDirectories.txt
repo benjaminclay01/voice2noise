@@ -1,0 +1,4 @@
+/data/voice2noise/build-voice2noise-Desktop-Debug/CMakeFiles/voice2noise.dir
+/data/voice2noise/build-voice2noise-Desktop-Debug/CMakeFiles/edit_cache.dir
+/data/voice2noise/build-voice2noise-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/data/voice2noise/build-voice2noise-Desktop-Debug/CMakeFiles/voice2noise_autogen.dir
