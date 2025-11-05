@@ -14,6 +14,8 @@ MP3Player::MP3Player(const std::string& filename) : loaded(false){
 	std::cout << "Loaded MP3: " << filename << " (" << mp3.channels << "ch, " << mp3.sampleRate << "Hz)\n";
 }
 
+MP3Player::MP3Player() : loaded(false){}
+
 MP3Player::~MP3Player(){
 	if (loaded) drmp3_uninit(&mp3);
 }
@@ -33,6 +35,16 @@ void MP3Player::rewind(){
 	if(loaded){
 		drmp3_seek_to_pcm_frame(&mp3, 0);
 	}
+}
+
+void MP3Player::loadMP3(const std::string& filename){
+    //ensure it inits properly
+    if(!drmp3_init_file(&mp3, filename.c_str(), nullptr)){
+        std::cerr << "Failed to open MP3: " << filename << "\n";
+        return;
+    }
+    loaded = true;
+    std::cout << "Loaded MP3: " << filename << " (" << mp3.channels << "ch, " << mp3.sampleRate << "Hz)\n";
 }
 
 

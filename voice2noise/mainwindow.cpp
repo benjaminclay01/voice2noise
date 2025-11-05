@@ -7,6 +7,7 @@
 
 //global audio handler object
 AudioHandler audio;
+MP3Player player;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -32,7 +33,7 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::startStop(){
     //set up MP3 file
     std::string filePath = this->mp3Path.toStdString();
-    MP3Player player(filePath);
+    player.loadMP3(filePath);
 
     //ensure fields are valid
     if(inputID == -1){
