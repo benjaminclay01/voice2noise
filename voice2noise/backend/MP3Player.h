@@ -6,7 +6,6 @@
 class MP3Player{
 public:
 	explicit MP3Player(const std::string& filename);
-    explicit MP3Player();
 	~MP3Player();
 
 	bool isLoaded() const;
@@ -14,7 +13,6 @@ public:
 	int getSampleRate() const;
 	int getChannels() const;
 	void rewind();
-    void loadMP3(const std::string& filename);
 
 private:
 	drmp3 mp3;

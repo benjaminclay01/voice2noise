@@ -214,153 +214,7 @@ CMakeFiles/voice2noise.dir/backend/AudioHandler.cpp.o: /data/voice2noise/voice2n
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/portaudio.h \
   /data/voice2noise/voice2noise/backend/MP3Player.h \
-  /data/voice2noise/voice2noise/backend/dr_mp3.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtDebug \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
-  /usr/include/c++/11/cstddef \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/assert.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qconfig.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/11/functional \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/node_handle.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
-  /usr/include/c++/11/variant \
-  /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/optional \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsysinfo.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h \
-  /usr/include/c++/11/atomic \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
-  /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
-  /usr/include/c++/11/stdlib.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h \
-  /usr/include/c++/11/numeric \
-  /usr/include/c++/11/bits/stl_numeric.h \
-  /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
-  /usr/include/c++/11/list \
-  /usr/include/c++/11/bits/stl_list.h \
-  /usr/include/c++/11/bits/list.tcc \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/ctime
+  /data/voice2noise/voice2noise/backend/dr_mp3.h
 
 CMakeFiles/voice2noise.dir/backend/MP3Player.cpp.o: /data/voice2noise/voice2noise/backend/MP3Player.cpp \
   /usr/include/stdc-predef.h \
@@ -1871,6 +1725,12 @@ voice2noise_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
 
+/usr/include/c++/11/sstream:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h:
@@ -1887,6 +1747,10 @@ voice2noise_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
@@ -1894,6 +1758,8 @@ voice2noise_autogen/include/ui_mainwindow.h:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h:
 
@@ -1909,29 +1775,21 @@ voice2noise_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:
-
-/data/voice2noise/voice2noise/main.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
-
 /usr/include/c++/11/ctime:
 
 /usr/include/c++/11/ratio:
+
+voice2noise_autogen/mocs_compilation.cpp:
+
+/usr/include/c++/11/bits/stl_multimap.h:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:
+
+/usr/include/c++/11/map:
 
 /usr/include/c++/11/bits/list.tcc:
 
@@ -1949,53 +1807,15 @@ voice2noise_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
-/usr/include/c++/11/sstream:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h:
-
-voice2noise_autogen/mocs_compilation.cpp:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/usr/include/c++/11/bits/stl_map.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:
-
-/usr/include/c++/11/map:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h:
 
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/c++/11/numeric:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h:
 
@@ -2011,35 +1831,15 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h:
 
-/usr/include/c++/11/stdlib.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/11/ext/concurrence.h:
 
@@ -2059,13 +1859,41 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/memory:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
 
 /usr/include/c++/11/bits/stream_iterator.h:
 
-/usr/include/strings.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h:
 
@@ -2089,6 +1917,30 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h:
 
+/usr/include/c++/11/optional:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/variant:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/c++/11/unordered_map:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
+
+/usr/include/c++/11/bits/refwrap.h:
+
 /usr/include/c++/11/bits/shared_ptr.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
@@ -2098,12 +1950,6 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -2120,6 +1966,10 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
 
@@ -2165,19 +2015,19 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/bits/localefwd.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
 
-/data/voice2noise/voice2noise/mainwindow.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h:
+
+/usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /usr/include/c++/11/iomanip:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h:
 
 /usr/include/c++/11/cctype:
-
-/usr/include/c++/11/unordered_map:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h:
 
@@ -2190,8 +2040,6 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/11/bits/unordered_map.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
@@ -2223,15 +2071,9 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
+/usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/c++/11/string:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/data/voice2noise/voice2noise/backend/AudioHandler.h:
 
 /usr/include/c++/11/tuple:
 
@@ -2248,12 +2090,6 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
-
-/usr/include/c++/11/debug/debug.h:
-
-/usr/include/features-time64.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
@@ -2349,6 +2185,8 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/data/voice2noise/voice2noise/main.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
@@ -2362,6 +2200,12 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
 
 /usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/data/voice2noise/voice2noise/mainwindow.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
@@ -2390,6 +2234,16 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
 
@@ -2435,6 +2289,8 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
 /usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
@@ -2447,8 +2303,6 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
-
 /usr/include/stdlib.h:
 
 /usr/include/c++/11/bits/invoke.h:
@@ -2457,9 +2311,17 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/c++/11/ext/aligned_buffer.h:
+
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/11/ext/aligned_buffer.h:
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -2493,6 +2355,12 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
+
+/usr/include/sched.h:
+
+/usr/include/wctype.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
@@ -2517,9 +2385,9 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
-/usr/include/c++/11/iostream:
-
 /usr/include/c++/11/bits/node_handle.h:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -2541,19 +2409,7 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/stdexcept:
 
-/usr/include/c++/11/codecvt:
-
-/usr/include/string.h:
-
-/usr/include/c++/11/bits/streambuf.tcc:
-
 /usr/include/c++/11/tr1/bessel_function.tcc:
-
-/data/voice2noise/voice2noise/backend/MP3Player.cpp:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -2563,9 +2419,9 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/cwctype:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h:
 
@@ -2574,6 +2430,14 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/c++/11/istream:
 
@@ -2625,6 +2489,10 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsysinfo.h:
+
+/usr/include/c++/11/vector:
+
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/bits/fs_fwd.h:
@@ -2643,8 +2511,6 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
-/usr/include/c++/11/optional:
-
 /usr/include/c++/11/bits/move.h:
 
 /usr/include/c++/11/bits/hash_bytes.h:
@@ -2661,19 +2527,59 @@ voice2noise_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
+/usr/include/c++/11/bits/uniform_int_dist.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QtDebug:
+/usr/include/c++/11/bits/basic_ios.h:
 
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
+/data/voice2noise/voice2noise/backend/MP3Player.cpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h:
+/usr/include/c++/11/stdlib.h:
 
-/usr/include/limits.h:
+/usr/include/c++/11/codecvt:
+
+/usr/include/c++/11/bits/streambuf.tcc:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/include/c++/11/debug/debug.h:
+
+/usr/include/features-time64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h:
 
+/usr/include/limits.h:
+
 /usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
+
+/usr/include/c++/11/string:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
 
@@ -2682,10 +2588,6 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h:
-
-/data/voice2noise/voice2noise/backend/AudioHandler.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/c++/11/pstl/execution_defs.h:
 
@@ -2702,53 +2604,3 @@ voice2noise_autogen/mocs_compilation.cpp:
 /usr/include/c++/11/tr1/beta_function.tcc:
 
 /usr/include/c++/11/array:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
-
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/sched.h:
-
-/usr/include/wctype.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
-
-/usr/include/c++/11/variant:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/vector:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsysinfo.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
-
-/usr/include/c++/11/tr1/hypergeometric.tcc:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h:

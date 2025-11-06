@@ -25,7 +25,7 @@ private:
 	int inChannels;
 	int outChannels;
 	float smoothedGain = 1.0f;
-    PaStream* stream = nullptr;
+	PaStream* stream;
     MP3Player* mp3Player = nullptr;
     static int audioCallback(const void* inputBuffer, void* outputBuffer,
                                  unsigned long framesPerBuffer,
