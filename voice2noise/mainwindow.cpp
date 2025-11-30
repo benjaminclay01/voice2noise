@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->inputBox, &QComboBox::activated, this,  &MainWindow::setInputDevice);
     connect(ui->outputBox, &QComboBox::activated, this,  &MainWindow::setOutputDevice);
     connect(ui->fileBrowseButton, &QPushButton::clicked, this, &MainWindow::setMP3File);
+    connect(ui->sensitivitySlider, &QSlider::sliderMoved, this, &MainWindow::sensitivityUpdate);
 }
 
 void MainWindow::startStop(){
@@ -88,6 +89,10 @@ void MainWindow::setMP3File(){
         QString fileName = QString::fromStdString(mp3Path.toStdString().substr(fileNameBegin + 1));
         this->ui->fileName->setText(fileName);
     }
+}
+
+void MainWindow::sensitivityUpdate(){
+    ui->sensitivityLCD->intValue = ui->sensitivitySlider->value;
 }
 
 MainWindow::~MainWindow()

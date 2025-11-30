@@ -3,7 +3,6 @@
 #include <QtDebug>
 
 #define FRAMES_PER_BUFFER 1024
-#define THRESHOLD 0.05f
 #define MINGAIN 0.5f
 #define MAXGAIN 2.0f
 
@@ -93,6 +92,10 @@ bool AudioHandler::openStream(int inputDeviceId, int outputDeviceId, MP3Player* 
     return true;
 }
 
+void setThreshold(int multiplier){
+    threshold = 0.05f * multiplier;
+}
+
 void AudioHandler::start(){
     if(stream){
         Pa_StartStream(stream);
@@ -124,7 +127,7 @@ int AudioHandler::audioCallback(const void* inputBuffer, void* outputBuffer, uns
     std::fill(out, out + framesPerBuffer * self->outChannels, 0.0f);
 
     //only write if volume is above threshold
-    if(peak < THRESHOLD){
+    if(peak < self->threshold){
         std::fill(out, out + framesPerBuffer * self->outChannels, 0.0f);
         return paContinue;
     }

@@ -49,7 +49,7 @@ else()
         )
     endif()
 endif()
-
+target_include_directories(voice2noise PRIVATE /usr/include)
 target_link_libraries(voice2noise PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets portaudio)
 
 target_include_directories(voice2noise PRIVATE backend)
