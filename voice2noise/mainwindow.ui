@@ -29,11 +29,17 @@
         <pointsize>48</pointsize>
        </font>
       </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
       <property name="text">
        <string>Welcome to Voice 2 Noise!</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
      </widget>
     </item>
@@ -48,7 +54,7 @@
       <item>
        <widget class="QPushButton" name="StartStopButton">
         <property name="layoutDirection">
-         <enum>Qt::LayoutDirection::LeftToRight</enum>
+         <enum>Qt::LeftToRight</enum>
         </property>
         <property name="text">
          <string>Start</string>
@@ -58,7 +64,7 @@
       <item>
        <widget class="Line" name="line">
         <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
+         <enum>Qt::Vertical</enum>
         </property>
        </widget>
       </item>
@@ -83,10 +89,10 @@
            <string/>
           </property>
           <property name="insertPolicy">
-           <enum>QComboBox::InsertPolicy::InsertAtTop</enum>
+           <enum>QComboBox::NoInsert</enum>
           </property>
           <property name="sizeAdjustPolicy">
-           <enum>QComboBox::SizeAdjustPolicy::AdjustToContents</enum>
+           <enum>QComboBox::AdjustToContents</enum>
           </property>
           <property name="placeholderText">
            <string>Select a Device...</string>
@@ -112,10 +118,10 @@
         <item>
          <widget class="QComboBox" name="outputBox">
           <property name="insertPolicy">
-           <enum>QComboBox::InsertPolicy::InsertAtTop</enum>
+           <enum>QComboBox::NoInsert</enum>
           </property>
           <property name="sizeAdjustPolicy">
-           <enum>QComboBox::SizeAdjustPolicy::AdjustToContents</enum>
+           <enum>QComboBox::AdjustToContents</enum>
           </property>
           <property name="placeholderText">
            <string>Select a Device...</string>
@@ -127,7 +133,7 @@
       <item>
        <widget class="Line" name="line_2">
         <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
+         <enum>Qt::Vertical</enum>
         </property>
        </widget>
       </item>
@@ -143,9 +149,6 @@
          <widget class="QLabel" name="fileName">
           <property name="text">
            <string>No File Selected...</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignmentFlag::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -173,7 +176,13 @@
        </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="sensitivity" stretch="10,1">
+       <layout class="QHBoxLayout" name="sensitivity" stretch="10,2">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
         <item>
          <widget class="QSlider" name="sensitivitySlider">
           <property name="baseSize">
@@ -188,17 +197,20 @@
           <property name="value">
            <number>50</number>
           </property>
+          <property name="sliderPosition">
+           <number>50</number>
+          </property>
           <property name="orientation">
-           <enum>Qt::Orientation::Horizontal</enum>
+           <enum>Qt::Horizontal</enum>
           </property>
           <property name="invertedAppearance">
-           <bool>false</bool>
+           <bool>true</bool>
           </property>
           <property name="invertedControls">
            <bool>false</bool>
           </property>
           <property name="tickPosition">
-           <enum>QSlider::TickPosition::TicksBelow</enum>
+           <enum>QSlider::TicksAbove</enum>
           </property>
           <property name="tickInterval">
            <number>10</number>
@@ -214,7 +226,7 @@
            <number>3</number>
           </property>
           <property name="segmentStyle">
-           <enum>QLCDNumber::SegmentStyle::Flat</enum>
+           <enum>QLCDNumber::Filled</enum>
           </property>
           <property name="value" stdset="0">
            <double>50.000000000000000</double>

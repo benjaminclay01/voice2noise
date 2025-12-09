@@ -39,3 +39,17 @@ win32 {
     # Windows audio dependencies that PortAudio needs
     LIBS += -lwinmm -lole32 -luuid -lksuser -lsetupapi
 }
+
+# PortAudio Configuration for Linux (Ubuntu/Debian paths)
+linux {
+    # Specify standard Linux library and include paths
+    INCLUDEPATH += /usr/local/include/ /usr/include/x86_64-linux-gnu/
+    LIBS += -L/usr/local/lib/ -L/usr/lib/x86_64-linux-gnu/
+
+    # Link the PortAudio library (-lportaudio looks for libportaudio.so or libportaudio.a)
+    LIBS += -lportaudio
+
+    # Add necessary Linux/ALSA/PulseAudio dependencies that PortAudio often needs
+    LIBS += -lasound -lpthread
+}
+

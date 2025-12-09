@@ -27,5 +27,7 @@ private:
    void setOutputDevice(int id);
    void setMP3File();
    void sensitivityUpdate();
+   void writeSettings();
+   void readSettings();
 };
 #endif // MAINWINDOW_H

@@ -4,6 +4,7 @@
 #include "backend/MP3Player.h"
 #include <QString>
 #include <QFileDialog>
+#include <QSettings>
 
 //global audio handler object
 AudioHandler audio;
@@ -28,7 +29,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->inputBox, &QComboBox::activated, this,  &MainWindow::setInputDevice);
     connect(ui->outputBox, &QComboBox::activated, this,  &MainWindow::setOutputDevice);
     connect(ui->fileBrowseButton, &QPushButton::clicked, this, &MainWindow::setMP3File);
-    connect(ui->sensitivitySlider, &QSlider::sliderMoved, this, &MainWindow::sensitivityUpdate);
+    connect(ui->sensitivitySlider, &QSlider::valueChanged, this, &MainWindow::sensitivityUpdate);
+
+    //read settings
+    readSettings();
 }
 
 void MainWindow::startStop(){
@@ -92,11 +96,63 @@ void MainWindow::setMP3File(){
 }
 
 void MainWindow::sensitivityUpdate(){
-    ui->sensitivityLCD->intValue = ui->sensitivitySlider->value;
+    int Sens = ui->sensitivitySlider->value();
+    ui->sensitivityLCD->display(Sens);
+    audio.setThreshold(Sens);
+}
+
+void MainWindow::writeSettings(){
+    QSettings settings("CaptBucket", "voice2noise");
+    //save sensitivity
+    settings.setValue("sensitivity", this->ui->sensitivitySlider->value());
+
+    //save file pick
+    if(!this->mp3Path.isEmpty()){
+        settings.setValue("audioFile", this->mp3Path);
+    }
+
+    //save I/O IDs and Names
+    settings.beginGroup("Devices");
+    settings.setValue("inputID", this->inputID);
+    settings.setValue("inputName", this->ui->inputBox->itemText(this->inputID));
+    settings.setValue("outputID", this->outputID);
+    settings.setValue("outputName", this->ui->outputBox->itemText(this->outputID));
+    settings.endGroup();
+}
+
+void MainWindow::readSettings(){
+    //set sensitivity
+    QSettings settings("CaptBucket", "voice2noise");
+    this->ui->sensitivitySlider->setValue(settings.value("sensitivity", 16).toInt());
+
+    //set file pick
+    this->mp3Path = settings.value("audioFile").toString();
+    if(this->mp3Path.isEmpty()){
+        this->ui->fileName->setText("No File Selected...");
+    } else {
+        size_t fileNameBegin = mp3Path.toStdString().find_last_of('/');
+        QString fileName = QString::fromStdString(mp3Path.toStdString().substr(fileNameBegin + 1));
+        this->ui->fileName->setText(fileName);
+    }
+
+    //set IDs and Names if they match in the new device list
+    settings.beginGroup("Devices");
+    QString oldDevice = settings.value("inputName", "").toString();
+    if(this->ui->inputBox->itemText(settings.value("inputID", -1).toInt()) == oldDevice){
+        this->ui->inputBox->setCurrentIndex(settings.value("inputID").toInt());
+        this->inputID = settings.value("inputID").toInt();
+    }
+    oldDevice = settings.value("outputName", "").toString();
+    if(this->ui->outputBox->itemText(settings.value("outputID", -1).toInt()) == oldDevice){
+        this->ui->outputBox->setCurrentIndex(settings.value("outputID").toInt());
+        this->outputID = settings.value("outputID").toInt();
+    }
+    settings.endGroup();
 }
 
 MainWindow::~MainWindow()
 {
+    writeSettings();
     delete ui;
 }
 

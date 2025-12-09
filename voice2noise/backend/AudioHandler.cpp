@@ -1,9 +1,10 @@
 #include <iostream>
+#include <math.h>
 #include "AudioHandler.h"
 #include <QtDebug>
 
 #define FRAMES_PER_BUFFER 1024
-#define MINGAIN 0.5f
+#define MINGAIN 1.0f
 #define MAXGAIN 2.0f
 
 AudioHandler::AudioHandler(){
@@ -92,8 +93,8 @@ bool AudioHandler::openStream(int inputDeviceId, int outputDeviceId, MP3Player* 
     return true;
 }
 
-void setThreshold(int multiplier){
-    threshold = 0.05f * multiplier;
+void AudioHandler::setThreshold(int multiplier){
+    this->threshold = (0.05f * log10(multiplier)) - 0.01f;
 }
 
 void AudioHandler::start(){
